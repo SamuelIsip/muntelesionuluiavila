@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-wrapper-content {
+    max-width: 1300px;
+    width: 100%;
+  }
+}
+
+@layer components {
+  .text-shadow {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+
+  .clipPathBefore {
+    width: 100%;
+    position: absolute;
+    clip-path: polygon(0 0px, 0px 100%, 100% 100%, 100% 40px);
+    height: 40px;
+    top: -40px;
+    content: "";
+    background-color: #e7bc5a;
+  }
+
+  .clipPathAfter {
+    width: 100%;
+    position: absolute;
+    clip-path: polygon(0 -1px, 0% 40px, 100% 0%, 100% 0);
+    height: 40px;
+    bottom: -40px;
+    content: "";
+    background-color: #e7bc5a;
+  }
+
+  .beforeTitle {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #9c5120;
+    bottom: -15px;
+  }
+  .afterTitle {
+    background-image: url(./../img/ElimDove.webp);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #ffffff;
+    content: "";
+    position: absolute;
+    width: 41px;
+    height: 26px;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%) translateY(50%);
+  }
+
+  .flipCard_inner {
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+
+  .flipCard_out:hover .flipCard_inner {
+    transform: rotateY(180deg);
+  }
+
+  .flipCard_front,
+  .flipCard_back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 14rem;
+    height: 14rem;
+    background-color: rgb(243 192 76);
+    border-radius: 0.5rem;
+    --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
+  }
+
+  .flipCard_back {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotateY(180deg);
+  }
+
+  .navLink {
+    transition: 0.5s;
+  }
+}

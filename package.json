@@ -1,0 +1,31 @@
+{
+  "name": "muntelesionuluiavila",
+  "version": "1.0.0",
+  "description": "Muntele Sionului Ávila",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./assets/input.css -o ./assets/output.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamuelIsip/muntelesionuluiavila.git"
+  },
+  "author": "Samuel Isip",
+  "keywords": [
+    "muntele sionului"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamuelIsip/muntelesionuluiavila/issues"
+  },
+  "homepage": "https://github.com/SamuelIsip/muntelesionuluiavila#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "flowbite": "^2.3.0"
+  }
+}

@@ -1,11 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biserica Penticostală Muntele Sionului Ávila</title>
+    <link rel="stylesheet" href="./assets/output.css" />
+    <link rel="icon" type="image/x-icon" href="img/LogoSion.webp" />
+  </head>
+  <body>
+    <nav
+      itemscope="itemscope"
+      itemtype="https://schema.org/WPHeader"
+      class="z-40 fixed w-full bg-gray-200 border-gray-400 px-2 sm:px-4 py-2.5 shadow-lg"
+    >
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <a href="#" class="flex" title="ELIM">
+          <img
+            src="./img/LogoAvila.webp"
+            alt="Elim Logo"
+            class="md:mr-4 w-15 h-14"
+          />
+          <span
+            class="font-bold self-center text-2xl md:text-4xl whitespace-nowrap text-black"
+            >Biserica Penticostală Muntele Sionului Ávila
+          </span>
+        </a>
+        <button
+          data-collapse-toggle="mobile-menu"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-white rounded-lg md:hidden focus:outline-none focus:ring-2"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          aria-label="Mobile Menu"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+          <ul
+            class="flex flex-col mt-4 text-xl text-center text-black md:flex-row md:space-x-8 md:mt-0 md:text-base"
+          >
+            <li
+              class="navLink md:border-b md:border-b-transparent md:hover:border-b md:hover:border-black"
+            >
+              <a
+                href="#"
+                title="Acasă"
+                class="block py-2 pr-4 pl-3 border-b border-gray-100 md:border-transparent"
+                >Acasă</a
+              >
+            </li>
+            <li
+              class="navLink md:border-b md:border-b-transparent md:hover:border-b md:hover:border-black"
+            >
+              <a
+                href="#despre-noi"
+                title="Despre noi"
+                class="block py-2 pr-4 pl-3 border-b border-gray-100 md:border-transparent"
+                >Despre noi</a
+              >
+            </li>
+            <li
+              class="navLink md:border-b md:border-b-transparent md:hover:border-b md:hover:border-black"
+            >
+              <a
+                href="#program"
+                class="block py-2 pr-4 pl-3 border-b border-gray-100 md:border-transparent"
+                >Servicii Divine</a
+              >
+            </li>
+            <li
+              class="navLink md:border-b md:border-b-transparent md:hover:border-b md:hover:border-black"
+            >
+              <a
+                href="#contact"
+                title="Contact"
+                class="block py-2 pr-4 pl-3 border-b border-gray-100 md:border-transparent"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <div class="overflow-hidden relative h-[550px] md:h-screen">
+          <div
+            class="w-full h-full bg-[url('/img/slide/biserica.png')] bg-cover bg-no-repeat bg-center"
+          ></div>
+        </div>
+      </section>
+      <section>
+        <!-- Background Image Section -->
+        <div class="bg-cover bg-center h-screen bg-[url('/img/muro.jpg')]">
+          <!-- Overlaying Div with Text -->
+          <div class="min-h-full flex">
+            <div
+              class="w-[550px] h-fit text-center md:justify-start mt-16 md:mt-32 md:ml-40"
+            >
+              <h2 class="mb-2 text-4xl font-semibold">Versetul Zilei</h2>
+              <p id="verseOfDay" class="italic text-2xl">
+                Fiindcă atât de mult a iubit Dumnezeu lumea, că a dat pe
+                singurul Lui Fiu, pentru ca oricine crede în El să nu piară, ci
+                să aibă viaţa veşnică.
+              </p>
+              <p id="verseOfDayReference" class="text-gray-800 text-xl">
+                Ioan 3:16
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="h-48 bg-zinc-950"></div>
+      </section>
+    </main>
+  </body>
 </html>
