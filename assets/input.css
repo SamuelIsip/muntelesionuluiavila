@@ -44,30 +44,41 @@
     background-color: #e7bc5a;
   }
 
-  .afterTitle {
+  .afterTitle{
     background-image: url(./../img/lineaTitulo.webp);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: contain;
     content: "";
     position: absolute;
-    width: 250px;
+  }
+
+  .afterTitle1 {
+    width: 350px;
     height: 250px;
-    bottom: -20px;
-    left: -35%;
+    bottom: -30px;
+    left: -70%;
+  }
+
+  .afterTitle1Md {
+    width: 350px;
+    height: 250px;
+    bottom: -30px;
+    left: -50%;
   }
 
   .afterTitle2 {
-    background-image: url(./../img/lineaTitulo.webp);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: "";
-    position: absolute;
-    width: 250px;
+    width: 350px;
     height: 250px;
-    bottom: -20px;
-    left: -5%;
+    bottom: -30px;
+    left: -30%;
+  }
+
+  .afterTitle2Md {
+    width: 400px;
+    height: 250px;
+    bottom: -30px;
+    left: -25%;
   }
 
   .flipCard_inner {
