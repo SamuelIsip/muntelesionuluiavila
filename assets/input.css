@@ -81,6 +81,20 @@
     left: -25%;
   }
 
+  .afterTitle3 {
+    width: 350px;
+    height: 250px;
+    bottom: -30px;
+    left: -12%;
+  }
+
+  .afterTitle3Md {
+    width: 400px;
+    height: 250px;
+    bottom: -30px;
+    left: -10%;
+  }
+
   .flipCard_inner {
     position: relative;
     transition: transform 0.8s;
@@ -99,8 +113,10 @@
     align-items: center;
     justify-content: center;
     width: 14rem;
-    height: 14rem;
-    background-color: rgb(243 192 76);
+    height: 12rem;
+    background-color: rgba(244, 244, 244, 0.85);
+    --tw-border-opacity: 1;
+    border-color: rgb(156 163 175 / var(--tw-border-opacity));
     border-radius: 0.5rem;
     --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
