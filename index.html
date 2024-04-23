@@ -22,7 +22,7 @@
       class="z-40 fixed w-full bg-white/85 border-gray-400 px-2 sm:px-4 shadow-lg md:pb-1"
     >
       <div
-        class="container flex flex-wrap justify-between items-center mx-auto"
+        class="container flex flex-wrap justify-between items-center mx-auto mb-1"
       >
         <a href="#" class="flex" title="ELIM">
           <img
@@ -39,27 +39,37 @@
             >Biserica Penticostală Muntele Sionului Ávila
           </span>
         </a>
-        <button
-          data-collapse-toggle="mobile-menu"
-          type="button"
-          class="inline-flex items-center p-2 ml-3 text-black rounded-lg focus:outline-none focus:ring-2"
-          aria-controls="mobile-menu"
-          aria-expanded="false"
-          aria-label="Mobile Menu"
-        >
-          <svg
-            class="w-8 h-8"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+        <div class="flex flex-row items-center">
+          <div>
+            <label class="relative cursor-pointer">
+              <input type="checkbox" class="sr-only peer" id="translation"/>
+              <div
+                class="w-[45px] h-6 flex items-center bg-gray-300 rounded-full text-[9px] peer-checked:text-[#9c5220bf] text-gray-400 font-extrabold after:flex after:items-center after:justify-center peer after:content-['ES'] peer-checked:after:content-['ES'] peer-checked:after:translate-x-full after:absolute after:left-[2px] peer-checked:after:border-white after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#9c5220b4]"
+              ></div>
+            </label>
+          </div>
+          <button
+            data-collapse-toggle="mobile-menu"
+            type="button"
+            class="inline-flex items-center text-black rounded-lg focus:outline-none focus:ring-2"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            aria-label="Mobile Menu"
           >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+            <svg
+              class="w-8 h-8"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
         <div class="hidden w-full" id="mobile-menu">
           <ul class="flex flex-col mt-4 text-lg text-center text-black">
             <li
@@ -117,7 +127,7 @@
         <div
           class="bg-cover bg-center h-screen bg-[url('/img/muro2.webp')] md:bg-[url('/img/muro.webp')]"
         >
-          <div class="min-h-full flex">
+          <div class="flex">
             <div
               class="w-[550px] h-fit text-center md:justify-start mt-16 md:mt-32 md:ml-40"
             >
@@ -171,8 +181,7 @@
           </div>
         </div>
       </section>
-
-      <section>
+      <section class="page-wrapper">
         <div class="relative text-center p-9 page-wrapper-content">
           <div class="text-center relative">
             <div class="w-fit m-auto flex flex-col justify-center items-center">
