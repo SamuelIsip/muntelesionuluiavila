@@ -12,6 +12,11 @@
     />
     <script defer src="./lib/flowbite.js"></script>
     <script defer src="./lib/modules/verseOfDayImpl.js"></script>
+    <script
+      async
+      defer
+      src="https://dailyverses.net/get/verse.js?language=nvi"
+    ></script>
     <script defer src="./lib/scrollreveal.js"></script>
     <script defer src="./lib/modules/scrollRevealImpl.js"></script>
     <script defer src="./lib/modules/translations.js"></script>
@@ -48,7 +53,11 @@
         <div class="flex flex-row items-center">
           <div>
             <label class="relative cursor-pointer">
-              <input type="checkbox" class="sr-only peer" id="translation_checkbox"/>
+              <input
+                type="checkbox"
+                class="sr-only peer"
+                id="translation_checkbox"
+              />
               <div
                 class="w-[45px] h-6 flex items-center bg-[#bfbfbfbc] rounded-full text-[9px] peer-checked:text-[#d1a892] text-[#bfbfbf] font-extrabold after:flex after:items-center after:justify-center peer after:content-['ES'] peer-checked:after:content-['ES'] peer-checked:after:translate-x-full after:absolute after:left-[2px] peer-checked:after:border-white after:bg-white after:border after:border-[#bfbfbfbc] after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#d1a892]"
               ></div>
@@ -150,31 +159,43 @@
             <div
               class="w-[550px] h-fit text-center md:justify-start mt-16 md:mt-32 md:ml-40"
             >
-              <h2 id="verseOfDay_title" lng-tag="verseOfDay_title" class="mb-3 text-2xl font-semibold">
+              <h2
+                id="verseOfDay_title"
+                lng-tag="verseOfDay_title"
+                class="mb-3 text-2xl font-semibold"
+              >
                 Versetul Zilei
               </h2>
-              <p
-                id="verseOfDay"
-                class="italic text-xl"
-                style="
-                  text-shadow: 1px 1px 2px white;
-                  font-family: Gungsuh W33 Regular, Arial, Helvetica, sans-serif;
-                "
-              >
-                Fiindcă atât de mult a iubit Dumnezeu lumea, că a dat pe
-                singurul Lui Fiu, pentru ca oricine crede în El să nu piară, ci
-                să aibă viaţa veşnică.
-              </p>
-              <p
-                id="verseOfDayReference"
-                class="text-gray-800 text-lg"
-                style="
-                  text-shadow: 1px 1px 2px white;
-                  font-family: Gungsuh W33 Regular, Arial, Helvetica, sans-serif;
-                "
-              >
-                Ioan 3:16
-              </p>
+
+              <div id="verseBibleES" class="hidden">
+                <div id="dailyVersesWrapper"></div>
+              </div>
+              <div id="verseBibleRO" class="hidden">
+                <p
+                  id="verseOfDay"
+                  class="italic text-xl"
+                  style="
+                    text-shadow: 1px 1px 2px white;
+                    font-family: Gungsuh W33 Regular, Arial, Helvetica,
+                      sans-serif;
+                  "
+                >
+                  Fiindcă atât de mult a iubit Dumnezeu lumea, că a dat pe
+                  singurul Lui Fiu, pentru ca oricine crede în El să nu piară,
+                  ci să aibă viaţa veşnică.
+                </p>
+                <p
+                  id="verseOfDayReference"
+                  class="text-gray-800 text-lg"
+                  style="
+                    text-shadow: 1px 1px 2px white;
+                    font-family: Gungsuh W33 Regular, Arial, Helvetica,
+                      sans-serif;
+                  "
+                >
+                  Ioan 3:16
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -186,7 +207,11 @@
               <div
                 class="w-fit m-auto flex flex-col justify-center items-center"
               >
-                <h2 id="aboutUs_title" lng-tag="aboutUs_title" class="text-3xl font-medium md:text-4xl">
+                <h2
+                  id="aboutUs_title"
+                  lng-tag="aboutUs_title"
+                  class="text-3xl font-medium md:text-4xl"
+                >
                   Despre noi
                 </h2>
                 <div class="mt-1 w-72 h-1 bg-black rounded-[50%]"></div>
@@ -208,7 +233,11 @@
         <div class="relative text-center p-9 page-wrapper-content">
           <div class="text-center relative">
             <div class="w-fit m-auto flex flex-col justify-center items-center">
-              <h2 id="faith_title" lng-tag="faith_title" class="text-3xl font-medium md:text-4xl">
+              <h2
+                id="faith_title"
+                lng-tag="faith_title"
+                class="text-3xl font-medium md:text-4xl"
+              >
                 Credința noastră
               </h2>
               <div class="mt-1 w-72 h-1 bg-black rounded-[50%]"></div>
@@ -255,7 +284,11 @@
                 >
                   Anul 2007
                 </p>
-                <p id="aboutUs_calendar1_text1" lng-tag="aboutUs_calendar1_text1" class="mb-4 text-base font-normal text-gray-800">
+                <p
+                  id="aboutUs_calendar1_text1"
+                  lng-tag="aboutUs_calendar1_text1"
+                  class="mb-4 text-base font-normal text-gray-800"
+                >
                   Totul a început în primăvara anului 2006 cu dorința unui grup
                   de credincioși care se uneau la părtășie în Ávila, un orășel
                   liniștit din centrul Spaniei. <br />
@@ -278,20 +311,24 @@
                   </svg>
                 </span>
                 <h3
-                id="aboutUs_calendar2"
-                lng-tag="aboutUs_calendar2"
+                  id="aboutUs_calendar2"
+                  lng-tag="aboutUs_calendar2"
                   class="flex items-center mb-1 text-lg font-semibold text-gray-900"
                 >
                   Încercări și binecuvântări
                 </h3>
                 <p
-                id="aboutUs_calendar2_year"
-                lng-tag="aboutUs_calendar2_year"
+                  id="aboutUs_calendar2_year"
+                  lng-tag="aboutUs_calendar2_year"
                   class="block mb-2 text-sm font-normal leading-none text-gray-400"
                 >
                   Anii 2010 - 2015
                 </p>
-                <p id="aboutUs_calendar2_text1" lng-tag="aboutUs_calendar2_text1" class="mb-4 text-base font-normal text-gray-800">
+                <p
+                  id="aboutUs_calendar2_text1"
+                  lng-tag="aboutUs_calendar2_text1"
+                  class="mb-4 text-base font-normal text-gray-800"
+                >
                   Odată cu criza și efectele ei, biserica a început să se
                   împuțineze datorită exodului masiv al fraților români.<br />
                   Biserica ajunsese să se suțină pe un mic număr de familii care
@@ -315,20 +352,24 @@
                   </svg>
                 </span>
                 <h3
-                id="aboutUs_calendar3"
-                lng-tag="aboutUs_calendar3"
+                  id="aboutUs_calendar3"
+                  lng-tag="aboutUs_calendar3"
                   class="flex items-center mb-1 text-lg font-semibold text-gray-900"
                 >
                   Înaintare cu speranțe noi
                 </h3>
                 <p
-                id="aboutUs_calendar3_year"
-                lng-tag="aboutUs_calendar3_year"
+                  id="aboutUs_calendar3_year"
+                  lng-tag="aboutUs_calendar3_year"
                   class="block mb-2 text-sm font-normal leading-none text-gray-400"
                 >
                   Actualitate
                 </p>
-                <p id="aboutUs_calendar3_text1" lng-tag="aboutUs_calendar3_text1" class="mb-4 text-base font-normal text-gray-800">
+                <p
+                  id="aboutUs_calendar3_text1"
+                  lng-tag="aboutUs_calendar3_text1"
+                  class="mb-4 text-base font-normal text-gray-800"
+                >
                   Lucrarea lui Dumnezeu continuă să propășească printre noi.<br />
                   Prin harul lui Dumnezeu desfășurăm activități care au în
                   vedere creșterea spirituală a membrilor: învățătură din
@@ -344,7 +385,11 @@
       <section id="contact">
         <div class="text-center relative">
           <div class="w-fit m-auto flex flex-col justify-center items-center">
-            <h2 id="contact_title" lng-tag="contact_title" class="text-3xl font-medium md:text-4xl">
+            <h2
+              id="contact_title"
+              lng-tag="contact_title"
+              class="text-3xl font-medium md:text-4xl"
+            >
               Informații de Contact
             </h2>
             <div class="mt-1 w-72 h-1 bg-black rounded-[50%]"></div>
@@ -362,8 +407,20 @@
                   class="w-24 h-24 m-auto"
                   loading="lazy"
                 />
-                <h3 id="contact_1_name" lng-tag="contact_1_name" class="text-xl">Pavel Negrușier</h3>                
-                <h4 id="contact_1_function" lng-tag="contact_1_function" class="text-gray-800 italic mb-2">Pastor</h4>
+                <h3
+                  id="contact_1_name"
+                  lng-tag="contact_1_name"
+                  class="text-xl"
+                >
+                  Pavel Negrușier
+                </h3>
+                <h4
+                  id="contact_1_function"
+                  lng-tag="contact_1_function"
+                  class="text-gray-800 italic mb-2"
+                >
+                  Pastor
+                </h4>
               </div>
               <div class="flipCard_back font-bold"></div>
             </div>
@@ -378,12 +435,36 @@
                   style="filter: brightness(0)"
                   loading="lazy"
                 />
-                <h3 id="contact_2_name" lng-tag="contact_2_name" class="text-xl">Florin Alexa</h3>
-                <h4 id="contact_2_function" lng-tag="contact_2_function" class="text-gray-800 italic mb-2">Prezbiter</h4>
+                <h3
+                  id="contact_2_name"
+                  lng-tag="contact_2_name"
+                  class="text-xl"
+                >
+                  Florin Alexa
+                </h3>
+                <h4
+                  id="contact_2_function"
+                  lng-tag="contact_2_function"
+                  class="text-gray-800 italic mb-2"
+                >
+                  Prezbiter
+                </h4>
               </div>
               <div class="flipCard_back font-bold">
-                <h2 id="contact_2_tlf_title" lng-tag="contact_2_tlf_title" class="text-lg">Număr de contact</h2>
-                <h3 id="contact_2_tlf" lng-tag="contact_2_tlf" class="italic text-base">+34 655 87 11 90</h3>
+                <h2
+                  id="contact_2_tlf_title"
+                  lng-tag="contact_2_tlf_title"
+                  class="text-lg"
+                >
+                  Număr de contact
+                </h2>
+                <h3
+                  id="contact_2_tlf"
+                  lng-tag="contact_2_tlf"
+                  class="italic text-base"
+                >
+                  +34 655 87 11 90
+                </h3>
               </div>
             </div>
           </div>
@@ -400,12 +481,36 @@
                   class="w-24 h-24 m-auto"
                   loading="lazy"
                 />
-                <h3 id="contact_3_name" lng-tag="contact_3_name"  class="text-xl">Dorin Anucuța</h3>
-                <h4 id="contact_3_function" lng-tag="contact_3_function" class="text-gray-800 italic mb-2">Diacon</h4>
+                <h3
+                  id="contact_3_name"
+                  lng-tag="contact_3_name"
+                  class="text-xl"
+                >
+                  Dorin Anucuța
+                </h3>
+                <h4
+                  id="contact_3_function"
+                  lng-tag="contact_3_function"
+                  class="text-gray-800 italic mb-2"
+                >
+                  Diacon
+                </h4>
               </div>
               <div class="flipCard_back font-bold">
-                <h2 id="contact_3_tlf_title" lng-tag="contact_3_tlf_title" class="text-lg">Număr de contact</h2>
-                <h3 id="contact_3_tlf" lng-tag="contact_3_tlf" class="italic text-base">+34 625 89 28 16</h3>
+                <h2
+                  id="contact_3_tlf_title"
+                  lng-tag="contact_3_tlf_title"
+                  class="text-lg"
+                >
+                  Număr de contact
+                </h2>
+                <h3
+                  id="contact_3_tlf"
+                  lng-tag="contact_3_tlf"
+                  class="italic text-base"
+                >
+                  +34 625 89 28 16
+                </h3>
               </div>
             </div>
           </div>
@@ -418,12 +523,36 @@
                   class="w-24 h-24 m-auto"
                   loading="lazy"
                 />
-                <h3 id="contact_4_name" lng-tag="contact_4_name" class="text-xl">Adrian Cucicea</h3>
-                <h4 id="contact_4_function" lng-tag="contact_4_function" class="text-gray-800 italic mb-2">Diacon</h4>
+                <h3
+                  id="contact_4_name"
+                  lng-tag="contact_4_name"
+                  class="text-xl"
+                >
+                  Adrian Cucicea
+                </h3>
+                <h4
+                  id="contact_4_function"
+                  lng-tag="contact_4_function"
+                  class="text-gray-800 italic mb-2"
+                >
+                  Diacon
+                </h4>
               </div>
               <div class="flipCard_back font-bold">
-                <h2 id="contact_4_tlf_title" lng-tag="contact_4_tlf_title" class="text-lg">Număr de contact</h2>
-                <h3 id="contact_4_tlf" lng-tag="contact_4_tlf" class="italic text-base">+34 642 62 70 72</h3>
+                <h2
+                  id="contact_4_tlf_title"
+                  lng-tag="contact_4_tlf_title"
+                  class="text-lg"
+                >
+                  Număr de contact
+                </h2>
+                <h3
+                  id="contact_4_tlf"
+                  lng-tag="contact_4_tlf"
+                  class="italic text-base"
+                >
+                  +34 642 62 70 72
+                </h3>
               </div>
             </div>
           </div>
@@ -431,7 +560,9 @@
         <div
           class="py-2 flex flex-row-reverse justify-center items-center pb-2 text-xl"
         >
-          <p id="contact_mail" lng-tag="contact_mail" class="text-gray-800">muntelesionuluiavila@gmail.com</p>
+          <p id="contact_mail" lng-tag="contact_mail" class="text-gray-800">
+            muntelesionuluiavila@gmail.com
+          </p>
           <div class="w-6 m-2">
             <img src="/img/mail.png" alt="mail" />
           </div>
@@ -440,7 +571,13 @@
       <section id="program" class="pt-16 page-wrapper">
         <div class="relative text-center p-9 page-wrapper-content">
           <div class="w-fit m-auto flex flex-col justify-center items-center">
-            <h2 id="program_title" lng-tag="program_title" class="text-3xl font-medium md:text-4xl">Servicii divine</h2>
+            <h2
+              id="program_title"
+              lng-tag="program_title"
+              class="text-3xl font-medium md:text-4xl"
+            >
+              Servicii divine
+            </h2>
             <div class="mt-1 w-72 h-1 bg-black rounded-[50%]"></div>
           </div>
           <div
@@ -449,9 +586,21 @@
             <div
               class="p-4 w-4/6 xl:w-1/5 h-64 rounded border border-[#bfbfbfbc] shadow-xl flex flex-col justify-center"
             >
-              <h3 id="program_day1" lng-tag="program_day1" class="text-2xl mb-2 font-semibold">Vineri</h3>
+              <h3
+                id="program_day1"
+                lng-tag="program_day1"
+                class="text-2xl mb-2 font-semibold"
+              >
+                Vineri
+              </h3>
               <div class="pt-4">
-                <p id="program_day1_title" lng-tag="program_day1_title" class="text-xl mb-2">Serviciu Divin</p>
+                <p
+                  id="program_day1_title"
+                  lng-tag="program_day1_title"
+                  class="text-xl mb-2"
+                >
+                  Serviciu Divin
+                </p>
                 <div class="flex flex-row justify-center">
                   <span class="flex items-center mr-2"
                     ><svg
@@ -476,9 +625,21 @@
             <div
               class="p-4 w-4/6 xl:w-1/5 h-64 rounded border border-[#bfbfbfbc] shadow-xl flex flex-col justify-center"
             >
-              <h3 id="program_day2" lng-tag="program_day2" class="text-2xl mb-2 font-semibold">Duminică</h3>
+              <h3
+                id="program_day2"
+                lng-tag="program_day2"
+                class="text-2xl mb-2 font-semibold"
+              >
+                Duminică
+              </h3>
               <div class="pt-4">
-                <p id="program_day2_info1" lng-tag="program_day2_info1" class="text-xl mb-2">Dimineața</p>
+                <p
+                  id="program_day2_info1"
+                  lng-tag="program_day2_info1"
+                  class="text-xl mb-2"
+                >
+                  Dimineața
+                </p>
                 <div class="flex flex-row justify-center">
                   <span class="flex items-center mr-2"
                     ><svg
@@ -500,7 +661,13 @@
                 </div>
               </div>
               <div class="pt-4">
-                <p id="program_day2_info2" lng-tag="program_day2_info2" class="text-xl mb-2">Seara</p>
+                <p
+                  id="program_day2_info2"
+                  lng-tag="program_day2_info2"
+                  class="text-xl mb-2"
+                >
+                  Seara
+                </p>
                 <div class="flex flex-row justify-center">
                   <span class="flex items-center mr-2"
                     ><svg
@@ -528,12 +695,22 @@
       <section id="map" class="pt-16 page-wrapper">
         <div class="text-center p-9 page-wrapper-content">
           <div class="w-fit m-auto flex flex-col justify-center items-center">
-            <h2 id="map_title" lng-tag="map_title" class="text-3xl font-medium md:text-4xl">Adresa</h2>
+            <h2
+              id="map_title"
+              lng-tag="map_title"
+              class="text-3xl font-medium md:text-4xl"
+            >
+              Adresa
+            </h2>
             <div class="mt-1 w-72 h-1 bg-black rounded-[50%]"></div>
           </div>
           <div class="mt-16">
             <div class="py-2 flex flex-row-reverse justify-center items-center">
-              <p id="map_address" lng-tag="map_address" class="text-center text-base">
+              <p
+                id="map_address"
+                lng-tag="map_address"
+                class="text-center text-base"
+              >
                 Calle del Rio Pisuerga 41-42, 05004, Ávila
               </p>
               <div class="w-8">
@@ -585,20 +762,40 @@
             class="px-2 lg:px-32 page-wrapper-content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
           >
             <div class="m-auto font-serif md:w-3/4 p-2">
-              <p id="salutul_title" lng-tag="salutul_title" class="md:text-2xl text-xl font-bold">Salutul Bisericii</p>
-              <p id="salutul_text" lng-tag="salutul_text" class="text-center p-6 md:text-2xl text-xl italic">
+              <p
+                id="salutul_title"
+                lng-tag="salutul_title"
+                class="md:text-2xl text-xl font-bold"
+              >
+                Salutul Bisericii
+              </p>
+              <p
+                id="salutul_text"
+                lng-tag="salutul_text"
+                class="text-center p-6 md:text-2xl text-xl italic"
+              >
                 Încolo, fraţii mei, tot ce este adevărat, tot ce este vrednic de
                 cinste, tot ce este drept, tot ce este curat, tot ce este
                 vrednic de iubit, tot ce este vrednic de primit, orice faptă
                 bună şi orice laudă, aceea să vă însufleţească.
               </p>
-              <p id="salutul_reference" lng-tag="salutul_reference" class="text-center md:text-xl">Filipeni 4:8</p>
+              <p
+                id="salutul_reference"
+                lng-tag="salutul_reference"
+                class="text-center md:text-xl"
+              >
+                Filipeni 4:8
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div>
-        <p id="copy_right" lng-tag="copy_right" class="text-center text-sm text-gray-500 m-8">
+        <p
+          id="copy_right"
+          lng-tag="copy_right"
+          class="text-center text-sm text-gray-500 m-8"
+        >
           © 2024 - <span id="current-year">2024</span>
           Biserica Creștină Penticostală "Muntele Sionului" | Toate drepturile
           rezervate
