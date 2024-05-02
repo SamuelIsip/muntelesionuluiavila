@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/Montserrat-Light.woff') format('woff'),
+       url('../fonts/Montserrat-Light.woff2') format('woff2');
+}  
+
+@font-face {
+  font-family: 'merriweather';
+  src: url('../fonts/Merriweather-Regular.woff') format('woff'),
+       url('../fonts/Merriweather-Regular.woff2') format('woff2');
+} 
+
 @layer base {
   .page-wrapper {
     display: flex;
