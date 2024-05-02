@@ -2,10 +2,33 @@
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biserica Penticostală Muntele Sionului Ávila</title>
-    <link rel="stylesheet" href="./assets/output.css" />
+    <meta
+      name="description"
+      content="Pagina oficială a Bisericii Muntele Sionului din Ávila. Pentru informații utile despre biserică, precum: locația, date de contact, etc. Vă asteptăm cu drag!"
+    />
+    <meta
+      name="keywords"
+      content="ávila, Biserica Muntele Sionului, Biserica Muntele Sionului Ávila, Biserica Penticostala, Biserica Penticostala Muntele Sionului Ávila"
+    />
+    <meta name="theme-color" content="#d1a892" />
+    <meta property="og:url" content="https://muntelesionuluiavila.es/" />
+    <meta
+      property="og:site_name"
+      content="Biserica Penticostala Muntele Sionului Ávila"
+    />
+    <meta property="og:locale" content="ro_RO" />
+    <meta
+      property="og:title"
+      content="Biserica Penticostala Muntele Sionului Ávila"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/LogoAvila.webp" />
     <link rel="icon" type="image/x-icon" href="img/LogoAvila.webp" />
+    <link rel="apple-touch-icon" href="img/LogoAvila.webp" />
+    <link rel="stylesheet" href="./assets/output.css" />
+
     <script defer src="./lib/flowbite.js"></script>
     <script defer src="./lib/modules/verseOfDayImpl.js"></script>
     <script
@@ -17,8 +40,30 @@
     <script defer src="./lib/modules/scrollRevealImpl.js"></script>
     <script defer src="./lib/modules/translations.js"></script>
     <script defer src="./lib/modules/translationsImpl.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Church",
+        "name": "Biserica Penticostala Muntele Sionului Ávila",
+        "Description": "Pagina oficiala a Bisericii Muntele Sionului din Ávila, pentru informatii utile despre biserica, precum locatia, date de contact.",
+        "email": "mailto:muntelesionuluiavila@gmail.com",
+        "telephone": "(34) 655 87 11 90",
+        "url": "https://muntelesionuluiavila.es",
+        "openingHours": "Fr 21:00-22:00, Su 10:00-12:00 18:00-20:00",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "SP",
+          "addressLocality": "Ávila",
+          "addressRegion": "AV",
+          "postalCode": "05004",
+          "streetAddress": "C. Rio Pisuerga 41-42"
+        },
+        "isAccessibleForFree": true
+      }
+    </script>
+    <title>Biserica Penticostală Muntele Sionului Ávila</title>
   </head>
-  <body>
+  <body itemscope="itemscope" itemtype="https://schema.org/WebPage">
     <nav
       itemscope="itemscope"
       itemtype="https://schema.org/WPHeader"
@@ -209,7 +254,7 @@
                   id="aboutUs_title"
                   lng-tag="aboutUs_title"
                   class="text-3xl md:text-4xl"
-                  style="font-family: montserrat;"
+                  style="font-family: montserrat"
                 >
                   Despre noi
                 </h2>
@@ -236,7 +281,7 @@
                 id="faith_title"
                 lng-tag="faith_title"
                 class="text-3xl font-medium md:text-4xl"
-                style="font-family: montserrat;"
+                style="font-family: montserrat"
               >
                 Credința noastră
               </h2>
@@ -390,7 +435,7 @@
               id="contact_title"
               lng-tag="contact_title"
               class="text-3xl font-medium md:text-4xl"
-              style="font-family: montserrat;"
+              style="font-family: montserrat"
             >
               Informații de contact
             </h2>
@@ -592,7 +637,7 @@
               id="program_title"
               lng-tag="program_title"
               class="text-3xl font-medium md:text-4xl"
-              style="font-family: montserrat;"
+              style="font-family: montserrat"
             >
               Servicii divine
             </h2>
@@ -717,7 +762,7 @@
               id="map_title"
               lng-tag="map_title"
               class="text-3xl font-medium md:text-4xl"
-              style="font-family: montserrat;"
+              style="font-family: montserrat"
             >
               Adresa
             </h2>
@@ -768,7 +813,11 @@
         </div>
       </section>
     </main>
-    <footer class="pt-16">
+    <footer
+      itemscope="itemscope"
+      itemtype="https://schema.org/WPFooter"
+      class="pt-16"
+    >
       <div id="salutul" class="mt-8 flex flex-col text-center">
         <div class="relative">
           <img
@@ -791,7 +840,7 @@
                 id="salutul_text"
                 lng-tag="salutul_text"
                 class="text-center p-6 md:text-xl text-lg"
-                style="font-family: merriweather;"
+                style="font-family: merriweather"
               >
                 Încolo, fraţii mei, tot ce este adevărat, tot ce este vrednic de
                 cinste, tot ce este drept, tot ce este curat, tot ce este
@@ -802,7 +851,7 @@
                 id="salutul_reference"
                 lng-tag="salutul_reference"
                 class="text-center md:text-lg"
-                style="font-family: merriweather;"
+                style="font-family: merriweather"
               >
                 Filipeni 4:8
               </p>
